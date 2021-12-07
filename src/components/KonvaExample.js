@@ -107,18 +107,11 @@ const KonvaExample = (props) => {
         }
     }
 
-    const change = () => {
-            select?.map(item => {
-            item.selected = true
-        })
-    }
-
     return (
         <>
             <div className="counter-btn">
                 <button onClick={() => add()}>+</button>
                 <button onClick={() => setItem(item - 1)}>-</button>
-                <button onClick={() => change()}>change</button>
             </div>
             <Stage width={window.innerWidth} height={window.innerHeight}>
                 <Layer>
